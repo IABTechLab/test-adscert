@@ -1,0 +1,6 @@
+{
+    "anon_cert": {
+        "device_id": "123e4567-e89b-12d3-a456-426614174000",
+        "issuer_cert_url": "www.chroku-firecast.com/root_cert_20220101.pem"
+    }
+}

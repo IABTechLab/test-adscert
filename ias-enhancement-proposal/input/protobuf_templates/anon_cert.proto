@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message AnonCertMain {
+
+    message Anon_cert {
+        bytes device_pub_key = 1;
+        string device_id = 2;
+        string issuer_cert_url = 3;
+        int64 expiration = 4;
+        optional bytes manufacturer_signature = 5;
+    }
+
+    Anon_cert anon_cert = 1;
+}

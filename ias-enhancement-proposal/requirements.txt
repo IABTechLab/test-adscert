@@ -1,0 +1,5 @@
+Brotli==1.0.9
+ecdsa==0.17.0
+protobuf==3.19.4
+pycryptodome==3.14.1
+bitarray==2.3.7

@@ -1,0 +1,49 @@
+{
+    "schain": {
+        "complete": 1, 
+        "ver":"1.0",
+        
+        "nodes":[ 
+            {	
+                "privacy_block": {
+                    "client_ip":"192.168.100.1"
+                },
+                "sid": "123456789", 
+                "hp": 1,
+                "asi": "ssai_provider.com",
+                "next_hop": "reseller.com",
+                "potential_verifiers": ["chainverify.com", "verifyprotect.com", "vericom.com"],
+                "recipient_verifiers": ["chainverify.com/pixel?challenge=asd3qb93q0df"]
+            }, {	
+                "privacy_block":{
+                    "bid_price": "$20CPM"
+                },
+                "sid": "2345678901", 
+                "hp": 0,
+                "asi": "reseller.com", 
+                "next_hop": "exchange-1.com",
+                "recipient_verifiers":[
+                    "vericom.com/fireme?challenge=5eaad83macq3"
+                ]
+            }, {	
+                "sid": "3456789012", 
+                "hp":1,
+                "asi": "exchange-1.com",
+                "next_hop": "exchange-2.com"
+            }, {	
+                "privacy_block": {
+                    "bid_price":"$25CPM"
+                },
+                "sid": "4567890123",
+                "hp": 1,
+                "asi": "exchange-2.com",
+                "next_hop": "final_bidder.com",
+                "recipient_verifiers": [
+                    "chainverify.com/pixel?challenge=leab92322da4",
+                    "verifyprotect.com/impression?challenge=39ba-c93ng11"
+                ]
+            }
+        ]
+    }
+}
+

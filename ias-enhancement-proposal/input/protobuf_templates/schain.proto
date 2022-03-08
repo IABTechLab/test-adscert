@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+message SchainMain {
+
+    message Anon_cert {
+        bytes device_pub_key = 1;
+        string device_id = 2;
+        string issuer_cert_url = 3;
+        uint64 expiration = 4;
+        bytes manufacturer_signature = 5;
+    }
+
+    message Nodes {
+        optional bytes hmac = 1;
+        optional string privacy_block = 2;
+        string asi = 3;
+        optional string next_hop = 4;
+        string sid = 5;
+        optional string rid = 6;
+        uint32 hp = 7;
+        repeated string potential_verifiers = 8;
+        repeated string recipient_verifiers = 9;
+    }
+
+    message Schain {
+        uint32 complete = 1;
+        string ver = 2;
+        string token_plaintext = 3;
+        bytes token_signed = 4;
+        Anon_cert anon_cert = 5;
+        repeated Nodes nodes = 6;
+    }
+
+    Schain schain = 1;
+}

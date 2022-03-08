@@ -1,0 +1,66 @@
+{
+    "complete": 1,
+    "ver": 1,
+    "token_plaintext": "1645859188197445000:uv0yw3hqb5:bid548138",
+    "token_signed": "MEUCIQCui7H4KRI/IEq1P74T3/dkR5E14sgtl8AboLpWXv/gXAIgM7d5wv6iTyN51iGFriCnOMP9v2FUFcnyoEuY319pgEE=",
+    "anon_cert": {
+        "issuer_signature": "MEYCIQCaq3ICfbTy7LoP+XAOWsyIFeH03R8yXR284CAFHomv5gIhAMbsbHJ5Uoh4lYsS7s8e9JdmmiSmNFHh5EQ/+wPNpQMz",
+        "device_pub_key": "MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAE/A04fMSmGa5pPl8UNS6kut23F1JNUt2rujPMHlktGzAGKPLIVEMFfEm3ib69bnMIsfHgdIrCCZe0VArzjv+rFg==",
+        "device_id": "123e4567-e89b-12d3-a456-426614174000",
+        "issuer_cert_url": "www.chroku-firecast.com/root_cert_20220101.pem",
+        "expiration": 1645866388197445000
+    },
+    "nodes": [
+        {
+            "asi": "ssai_provider.com",
+            "sid": 123456789,
+            "hp": 1,
+            "potential_verifiers": [
+                "chainverify.com",
+                "verifyprotect.com",
+                "vericom.com"
+            ],
+            "privacy_block": {
+                "client_ip": "192.168.100.1"
+            },
+            "next_hop": "reseller.com",
+            "recipient_verifiers": [
+                "chainverify.com/pixel?challenge=asd3qb93q0df"
+            ],
+            "hmac": "RIK6y9PQUFM="
+        },
+        {
+            "asi": "reseller.com",
+            "sid": 2345678901,
+            "hp": 0,
+            "privacy_block": {
+                "bid_price": "$20CPM"
+            },
+            "next_hop": "exchange-1.com",
+            "recipient_verifiers": [
+                "vericom.com/fireme?challenge=5eaad83macq3"
+            ],
+            "hmac": "tP8RS333vpk="
+        },
+        {
+            "asi": "exchange-1.com",
+            "sid": 3456789012,
+            "hp": 1,
+            "hmac": "LzslK+Je+us="
+        },
+        {
+            "asi": "exchange-2.com",
+            "sid": 4567890123,
+            "hp": 1,
+            "privacy_block": {
+                "bid_price": "$25CPM"
+            },
+            "next_hop": "final_bidder.com",
+            "recipient_verifiers": [
+                "chainverify.com/pixel?challenge=leab92322da4",
+                "verifyprotect.com/impression?challenge=39ba-c93ng11"
+            ],
+            "hmac": "l0ywuQCcn8M="
+        }
+    ]
+}
